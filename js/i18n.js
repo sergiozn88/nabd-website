@@ -130,9 +130,13 @@ window.NabdI18n = (function () {
       legal: {
         privacyPolicy: "سياسة الخصوصية",
         termsOfUse: "شروط الاستخدام",
+        childSafety: "سلامة الأطفال",
+        accountDeletion: "حذف الحساب",
         backHome: "الرئيسية",
         viewPrivacy: "سياسة الخصوصية",
         viewTerms: "شروط الاستخدام",
+        viewChildSafety: "معايير سلامة الأطفال",
+        viewAccountDeletion: "حذف الحساب",
       },
     },
     en: {
@@ -262,9 +266,13 @@ window.NabdI18n = (function () {
       legal: {
         privacyPolicy: "Privacy Policy",
         termsOfUse: "Terms of Use",
+        childSafety: "Child Safety",
+        accountDeletion: "Delete Account",
         backHome: "Home",
         viewPrivacy: "Privacy Policy",
         viewTerms: "Terms of Use",
+        viewChildSafety: "Child Safety Standards",
+        viewAccountDeletion: "Account Deletion",
       },
     },
   };

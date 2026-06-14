@@ -1,4 +1,51 @@
 (function () {
+  function renderRelatedLinks(links) {
+    if (!links || !links.length) return null;
+
+    var nav = document.createElement("nav");
+    nav.className = "legal-doc__related";
+    nav.setAttribute("aria-label", "Related policies");
+
+    links.forEach(function (item) {
+      var a = document.createElement("a");
+      a.href = item.href;
+      a.textContent = item.label;
+      nav.appendChild(a);
+    });
+
+    return nav;
+  }
+
+  function renderCallout(callout) {
+    if (!callout) return null;
+
+    var aside = document.createElement("aside");
+    aside.className = "legal-doc__callout";
+
+    if (callout.title) {
+      var title = document.createElement("p");
+      title.className = "legal-doc__callout-title";
+      title.textContent = callout.title;
+      aside.appendChild(title);
+    }
+
+    if (callout.body) {
+      var body = document.createElement("p");
+      body.textContent = callout.body;
+      aside.appendChild(body);
+    }
+
+    if (callout.link) {
+      var link = document.createElement("a");
+      link.href = callout.link.href;
+      link.textContent = callout.link.label;
+      link.className = "legal-doc__callout-link";
+      aside.appendChild(link);
+    }
+
+    return aside;
+  }
+
   function renderLegalPage(docType) {
     var root = document.getElementById("legal-content");
     if (!root || !window.NabdLegalContent) return;
@@ -22,6 +69,13 @@
 
     var effective = document.getElementById("legal-effective");
     if (effective) effective.textContent = content.effective;
+
+    var relatedNav = document.getElementById("legal-related-nav");
+    if (relatedNav) {
+      relatedNav.innerHTML = "";
+      var related = renderRelatedLinks(content.relatedLinks);
+      if (related) relatedNav.appendChild(related);
+    }
 
     root.innerHTML = "";
 
@@ -57,11 +111,25 @@
         block.appendChild(list);
       }
 
+      if (section.steps && section.steps.length) {
+        var steps = document.createElement("ol");
+        steps.className = "legal-doc__steps";
+        section.steps.forEach(function (item) {
+          var li = document.createElement("li");
+          li.textContent = item;
+          steps.appendChild(li);
+        });
+        block.appendChild(steps);
+      }
+
       if (section.after) {
         var after = document.createElement("p");
         after.textContent = section.after;
         block.appendChild(after);
       }
+
+      var callout = renderCallout(section.callout);
+      if (callout) block.appendChild(callout);
 
       root.appendChild(block);
     });
@@ -86,10 +154,6 @@
 
     if (window.initLogos) {
       window.initLogos();
-    } else {
-      document.querySelectorAll(".nabd-logo").forEach(function (svg) {
-        if (svg.children.length) return;
-      });
     }
 
     var year = document.getElementById("year");
