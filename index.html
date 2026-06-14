@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="نبض — ذكاء مجتمعي لحيك. أبلغ عن المشكلات، تابع الحلول، وساهم في تحسين مدينتك."
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <title>نبض — نبض مجتمعك</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="/" data-i18n-attr="aria-label:brand.home">
+          <svg class="nabd-logo" data-size="32" data-animate="false" aria-hidden="true"></svg>
+          <span class="brand__name" data-i18n="brand.name">نبض</span>
+        </a>
+
+        <div class="site-header__actions">
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-attr="aria-label:lang.switch"
+          >
+            <button
+              class="lang-switch__btn is-active"
+              type="button"
+              data-lang="ar"
+              aria-pressed="true"
+            >
+              <span data-i18n="lang.ar">عربي</span>
+            </button>
+            <button
+              class="lang-switch__btn"
+              type="button"
+              data-lang="en"
+              aria-pressed="false"
+            >
+              <span data-i18n="lang.en">English</span>
+            </button>
+          </div>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            <span class="nav-toggle__icon" aria-hidden="true">
+              <span class="nav-toggle__bar"></span>
+              <span class="nav-toggle__bar"></span>
+              <span class="nav-toggle__bar"></span>
+            </span>
+            <span class="nav-toggle__label" data-i18n="nav.menu">القائمة</span>
+          </button>
+        </div>
+
+        <nav id="site-nav" class="site-nav" data-i18n-attr="aria-label:nav.label">
+          <ul class="site-nav__list">
+            <li><a href="#about" data-i18n="nav.about">عن نبض</a></li>
+            <li><a href="#features" data-i18n="nav.features">المزايا</a></li>
+            <li><a href="#process" data-i18n="nav.process">كيف يعمل</a></li>
+            <li>
+              <a class="site-nav__cta" href="#download" data-i18n="nav.download"
+                >تنزيل</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section section--dark" aria-labelledby="hero-heading">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow hero__reveal" data-i18n="hero.eyebrow">ذكاء مجتمعي</p>
+            <h1 id="hero-heading" class="hero__title hero__reveal" data-i18n="hero.title">
+              نبض مجتمعك
+            </h1>
+            <p class="hero__lead hero__reveal" data-i18n="hero.lead">
+              رصِد مشكلات حيك، تحقق مما يهم، وتابع كل بلاغ من لحظة الإرسال حتى
+              الحل — معًا.
+            </p>
+            <div class="hero__actions hero__reveal">
+              <a class="btn btn--primary" href="#download" data-i18n="hero.download"
+                >تنزيل</a
+              >
+              <a class="btn btn--ghost" href="#about" data-i18n="hero.watch"
+                >شاهد الفيلم</a
+              >
+            </div>
+          </div>
+          <div class="hero__visual">
+            <svg
+              class="nabd-logo nabd-logo--hero"
+              data-size="320"
+              data-animate="true"
+              role="img"
+              data-i18n-attr="aria-label:hero.logoAria"
+            ></svg>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="quote section section--dark reveal"
+        data-i18n-attr="aria-label:quote.aria"
+      >
+        <div class="container">
+          <blockquote class="quote__text">
+            <p data-i18n="quote.text">لكل مجتمع صوت. لا أحد يصغي.</p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="mission section section--light reveal"
+        aria-labelledby="mission-heading"
+      >
+        <div class="container mission__grid">
+          <div class="mission__intro">
+            <h2 id="mission-heading" class="section-title" data-i18n="mission.title">
+              نبض ليس تطبيق شكاوى
+            </h2>
+            <p class="mission__body" data-i18n="mission.body">
+              بل أداة ذكاء مجتمعي يومية لتحسين مدينتك. يحوّل نبض بلاغات الحي إلى
+              ذاكرة مشتركة، ومتابعة شفافة، وإجراءات يثق بها السكان.
+            </p>
+          </div>
+          <ul class="values-list">
+            <li class="values-list__item reveal reveal--delay-1">
+              <span class="values-list__label" data-i18n="mission.values.trustworthy.label"
+                >جدير بالثقة</span
+              >
+              <span class="values-list__desc" data-i18n="mission.values.trustworthy.desc"
+                >بلاغات موثّقة وحالة واضحة في كل خطوة.</span
+              >
+            </li>
+            <li class="values-list__item reveal reveal--delay-2">
+              <span class="values-list__label" data-i18n="mission.values.memory.label"
+                >يحفظ الذاكرة</span
+              >
+              <span class="values-list__desc" data-i18n="mission.values.memory.desc"
+                >تبقى المشكلات ظاهرة حتى لا تختفي الأنماط.</span
+              >
+            </li>
+            <li class="values-list__item reveal reveal--delay-3">
+              <span class="values-list__label" data-i18n="mission.values.action.label"
+                >إجراء بنّاء</span
+              >
+              <span class="values-list__desc" data-i18n="mission.values.action.desc"
+                >مصمّم لتوجيه المشكلات إلى الفرق القادرة على حلها.</span
+              >
+            </li>
+            <li class="values-list__item reveal reveal--delay-4">
+              <span class="values-list__label" data-i18n="mission.values.transparent.label"
+                >شفاف</span
+              >
+              <span class="values-list__desc" data-i18n="mission.values.transparent.desc"
+                >متابعة مفتوحة من البلاغ إلى الحل.</span
+              >
+            </li>
+            <li class="values-list__item reveal reveal--delay-5">
+              <span class="values-list__label" data-i18n="mission.values.citizen.label"
+                >يركّز على المواطن</span
+              >
+              <span class="values-list__desc" data-i18n="mission.values.citizen.desc"
+                >مُصمَّم حول من يعيشون في الحي.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="features section section--dark reveal"
+        aria-labelledby="features-heading"
+      >
+        <div class="container">
+          <h2
+            id="features-heading"
+            class="section-title section-title--center"
+            data-i18n="features.title"
+          >
+            كل ما يحتاجه حيك
+          </h2>
+          <ul class="feature-grid">
+            <li class="feature-card reveal reveal--delay-1">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9Z" />
+                  <path d="M12 12 21 7.5M12 12v9M12 12 3 7.5" />
+                </svg>
+              </span>
+              <h3 class="feature-card__title" data-i18n="features.map.title">
+                خريطة حيّة للحي
+              </h3>
+              <p class="feature-card__text" data-i18n="features.map.text">
+                استكشف بلاغات المجتمع على خريطة تفاعلية وافهم ما يجري من حولك.
+              </p>
+            </li>
+            <li class="feature-card reveal reveal--delay-2">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 7h4l2-3h4l2 3h4v12H4V7Z" />
+                  <circle cx="12" cy="13" r="3.5" />
+                </svg>
+              </span>
+              <h3 class="feature-card__title" data-i18n="features.evidence.title">
+                بلاغات مدعومة بالأدلة
+              </h3>
+              <p class="feature-card__text" data-i18n="features.evidence.text">
+                أرسل المشكلات مع صور وموقع حتى يحصل المشرفون وفرق المدينة على ما
+                يلزمهم للتحرك.
+              </p>
+            </li>
+            <li class="feature-card reveal reveal--delay-3">
+              <span class="feature-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 3 4 7v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V7l-8-4Z" />
+                  <path d="m9.5 12.5 1.8 1.8L15 10.5" />
+                </svg>
+              </span>
+              <h3 class="feature-card__title" data-i18n="features.verify.title">
+                تحقق مجتمعي
+              </h3>
+              <p class="feature-card__text" data-i18n="features.verify.text">
+                يؤكد الجيران ما هو حقيقي، فيقل الضجيج وتقوى الثقة في كل بلاغ.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="process"
+        class="process section section--light reveal"
+        aria-labelledby="process-heading"
+      >
+        <div class="container process__layout">
+          <div class="process__header">
+            <h2
+              id="process-heading"
+              class="section-title section-title--center"
+              data-i18n="process.title"
+            >
+              من البلاغ إلى الحل
+            </h2>
+            <p class="process__lead" data-i18n="process.lead">
+              مسار واضح يحوّل ملاحظتك اليومية إلى إجراء جماعي يمكن متابعته
+              ومشاركته.
+            </p>
+          </div>
+
+          <div class="process-timeline">
+            <div class="process-timeline__track" aria-hidden="true">
+              <span class="process-timeline__line"></span>
+            </div>
+
+            <ol class="process-steps">
+              <li class="process-card reveal reveal--delay-1">
+                <div class="process-card__marker">
+                  <span class="process-card__number">01</span>
+                  <span class="process-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M4 7h4l2-3h4l2 3h4v12H4V7Z" />
+                      <circle cx="12" cy="13" r="3.5" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="process-card__body">
+                  <h3 class="process-card__title" data-i18n="process.steps.report.title">
+                    بلاغ
+                  </h3>
+                  <p class="process-card__text" data-i18n="process.steps.report.text">
+                    لاحظ مشكلة في حيك وأرسلها مع دليل يثبتها.
+                  </p>
+                </div>
+              </li>
+
+              <li class="process-card reveal reveal--delay-2">
+                <div class="process-card__marker">
+                  <span class="process-card__number">02</span>
+                  <span class="process-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 3 4 7v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V7l-8-4Z" />
+                      <path d="m9.5 12.5 1.8 1.8L15 10.5" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="process-card__body">
+                  <h3 class="process-card__title" data-i18n="process.steps.verify.title">
+                    تحقق
+                  </h3>
+                  <p class="process-card__text" data-i18n="process.steps.verify.text">
+                    يؤكد المجتمع ما هو واقعي قبل أن يُتخذ أي إجراء.
+                  </p>
+                </div>
+              </li>
+
+              <li class="process-card reveal reveal--delay-3">
+                <div class="process-card__marker">
+                  <span class="process-card__number">03</span>
+                  <span class="process-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M4 12h16M4 6h10M4 18h7" />
+                      <path d="m17 15 3 3-3 3" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="process-card__body">
+                  <h3 class="process-card__title" data-i18n="process.steps.route.title">
+                    توجيه
+                  </h3>
+                  <p class="process-card__text" data-i18n="process.steps.route.text">
+                    تصل البلاغات الموثّقة إلى المشرفين والفرق البلدية المختصة.
+                  </p>
+                </div>
+              </li>
+
+              <li class="process-card reveal reveal--delay-4">
+                <div class="process-card__marker">
+                  <span class="process-card__number">04</span>
+                  <span class="process-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="process-card__body">
+                  <h3 class="process-card__title" data-i18n="process.steps.resolve.title">
+                    حل
+                  </h3>
+                  <p class="process-card__text" data-i18n="process.steps.resolve.text">
+                    تابع سير المعالجة علنًا حتى يكتمل الإصلاح ويُتحقق منه.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="privacy section section--dark reveal"
+        aria-labelledby="privacy-heading"
+      >
+        <div class="container privacy__inner">
+          <h2
+            id="privacy-heading"
+            class="section-title section-title--center"
+            data-i18n-html="privacy.title"
+          >
+            مجهول الهوية افتراضيًا.<br />وشفاف بالتصميم.
+          </h2>
+          <ul class="privacy-grid">
+            <li class="privacy-item reveal reveal--delay-1">
+              <span class="privacy-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="8" r="3.5" />
+                  <path d="M5 20c0-3.3 3.1-5.5 7-5.5s7 2.2 7 5.5" />
+                </svg>
+              </span>
+              <h3 class="privacy-item__title" data-i18n="privacy.private.title">
+                هوية محمية
+              </h3>
+              <p class="privacy-item__text" data-i18n="privacy.private.text">
+                لا يظهر اسمك على الخريطة العامة إلا إذا اخترت ذلك.
+              </p>
+            </li>
+            <li class="privacy-item reveal reveal--delay-2">
+              <span class="privacy-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 6h16M4 12h16M4 18h10" />
+                </svg>
+              </span>
+              <h3 class="privacy-item__title" data-i18n="privacy.open.title">
+                حالة مفتوحة
+              </h3>
+              <p class="privacy-item__text" data-i18n="privacy.open.text">
+                لكل بلاغ مسار واضح — بلا صناديق سوداء.
+              </p>
+            </li>
+            <li class="privacy-item reveal reveal--delay-3">
+              <span class="privacy-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 3 4 7v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V7l-8-4Z" />
+                </svg>
+              </span>
+              <h3 class="privacy-item__title" data-i18n="privacy.data.title">
+                بيانات مسؤولة
+              </h3>
+              <p class="privacy-item__text" data-i18n="privacy.data.text">
+                يُشارك الموقع فقط مع الفرق التي تحتاجه للاستجابة.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="download"
+        class="download section section--light reveal"
+        aria-labelledby="download-heading"
+      >
+        <div class="container download__inner">
+          <svg
+            class="nabd-logo download__logo"
+            data-size="72"
+            data-animate="false"
+            aria-hidden="true"
+          ></svg>
+          <h2
+            id="download-heading"
+            class="section-title section-title--center"
+            data-i18n="download.title"
+          >
+            نبض. انضم إلى حيك.
+          </h2>
+          <p class="download__lead" data-i18n="download.lead">
+            حمّل نبض وساعد مدينتك على الإصغاء لما يهم.
+          </p>
+          <div class="store-buttons">
+            <a
+              class="store-button"
+              href="#"
+              data-i18n-attr="aria-label:download.appStore"
+            >
+              <span class="store-button__icon" aria-hidden="true">&#63743;</span>
+              <span class="store-button__copy">
+                <span class="store-button__label" data-i18n="download.appStoreLabel"
+                  >تنزيل من</span
+                >
+                <span class="store-button__brand" data-i18n="download.appStoreBrand"
+                  >App Store</span
+                >
+              </span>
+            </a>
+            <a
+              class="store-button"
+              href="#"
+              data-i18n-attr="aria-label:download.playStore"
+            >
+              <span class="store-button__icon store-button__icon--play" aria-hidden="true"></span>
+              <span class="store-button__copy">
+                <span class="store-button__label" data-i18n="download.playStoreLabel"
+                  >تنزيل من</span
+                >
+                <span class="store-button__brand" data-i18n="download.playStoreBrand"
+                  >Google Play</span
+                >
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section--dark">
+      <div class="container site-footer__inner">
+        <a class="brand brand--footer" href="/" data-i18n-attr="aria-label:brand.home">
+          <svg class="nabd-logo" data-size="28" data-animate="false" aria-hidden="true"></svg>
+          <span class="brand__name" data-i18n="brand.name">نبض</span>
+        </a>
+        <nav class="footer-nav" data-i18n-attr="aria-label:footer.label">
+          <ul class="footer-nav__list">
+            <li><a href="#about" data-i18n="nav.about">عن نبض</a></li>
+            <li><a href="#features" data-i18n="nav.features">المزايا</a></li>
+            <li><a href="#process" data-i18n="nav.process">كيف يعمل</a></li>
+            <li><a href="#download" data-i18n="nav.download">تنزيل</a></li>
+          </ul>
+        </nav>
+        <p class="site-footer__copy">
+          &copy; <span id="year"></span>
+          <span data-i18n="footer.copy">نبض. جميع الحقوق محفوظة.</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
