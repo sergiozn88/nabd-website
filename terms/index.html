@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="شروط استخدام تطبيق نبض: القبول، الاستخدام المقبول، الإشراف، ومسؤولية المنصة."
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <title>شروط الاستخدام — نبض</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/legal.css" />
+  </head>
+  <body class="legal-page-body">
+    <a class="skip-link" href="#legal-main" data-i18n="skip">انتقل إلى المحتوى</a>
+
+    <header class="site-header legal-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="../" data-i18n-attr="aria-label:brand.home">
+          <svg class="nabd-logo" data-size="32" data-animate="false" aria-hidden="true"></svg>
+          <span class="brand__name" data-i18n="brand.name">نبض</span>
+        </a>
+
+        <div class="site-header__actions">
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-attr="aria-label:lang.switch"
+          >
+            <button
+              class="lang-switch__btn is-active"
+              type="button"
+              data-lang="ar"
+              aria-pressed="true"
+            >
+              <span data-i18n="lang.ar">عربي</span>
+            </button>
+            <button
+              class="lang-switch__btn"
+              type="button"
+              data-lang="en"
+              aria-pressed="false"
+            >
+              <span data-i18n="lang.en">English</span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="site-nav site-nav--legal" aria-label="Legal">
+          <ul class="site-nav__list">
+            <li>
+              <a href="../" data-i18n="legal.backHome">الرئيسية</a>
+            </li>
+            <li>
+              <a href="../privacy/" data-i18n="legal.privacyPolicy">سياسة الخصوصية</a>
+            </li>
+            <li>
+              <a href="../terms/" aria-current="page" data-i18n="legal.termsOfUse">شروط الاستخدام</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="legal-main" class="legal-page">
+      <div class="container">
+        <header class="legal-page__header">
+          <h1 id="legal-page-title" class="legal-page__title">شروط الاستخدام</h1>
+          <div class="legal-page__meta">
+            <span id="legal-last-updated">آخر تحديث: 10 يونيو 2026</span>
+            <span id="legal-effective">سارية اعتبارًا من: الإصدار التجريبي الداخلي</span>
+          </div>
+          <nav class="legal-page__nav" aria-label="Related policies">
+            <a href="../privacy/" data-i18n="legal.viewPrivacy">سياسة الخصوصية</a>
+            <a href="../" data-i18n="legal.backHome">العودة إلى الرئيسية</a>
+          </nav>
+        </header>
+
+        <article id="legal-content" class="legal-doc" aria-labelledby="legal-page-title"></article>
+      </div>
+    </main>
+
+    <footer class="site-footer section--dark">
+      <div class="container site-footer__inner">
+        <a class="brand brand--footer" href="../" data-i18n-attr="aria-label:brand.home">
+          <svg class="nabd-logo" data-size="28" data-animate="false" aria-hidden="true"></svg>
+          <span class="brand__name" data-i18n="brand.name">نبض</span>
+        </a>
+        <nav class="footer-nav" data-i18n-attr="aria-label:footer.label">
+          <ul class="footer-nav__list">
+            <li>
+              <a href="../privacy/" data-i18n="legal.privacyPolicy">سياسة الخصوصية</a>
+            </li>
+            <li>
+              <a href="../terms/" data-i18n="legal.termsOfUse">شروط الاستخدام</a>
+            </li>
+            <li><a href="../#download" data-i18n="nav.download">تنزيل</a></li>
+          </ul>
+        </nav>
+        <p class="site-footer__copy">
+          &copy; <span id="year"></span>
+          <span data-i18n="footer.copy">نبض. جميع الحقوق محفوظة.</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/legal-content.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/legal.js"></script>
+    <script>
+      NabdLegalPage.init("terms");
+    </script>
+  </body>
+</html>

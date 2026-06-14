@@ -127,6 +127,13 @@ window.NabdI18n = (function () {
         label: "تذييل الصفحة",
         copy: "نبض. جميع الحقوق محفوظة.",
       },
+      legal: {
+        privacyPolicy: "سياسة الخصوصية",
+        termsOfUse: "شروط الاستخدام",
+        backHome: "الرئيسية",
+        viewPrivacy: "سياسة الخصوصية",
+        viewTerms: "شروط الاستخدام",
+      },
     },
     en: {
       meta: {
@@ -252,6 +259,13 @@ window.NabdI18n = (function () {
         label: "Footer",
         copy: "Nabd. All rights reserved.",
       },
+      legal: {
+        privacyPolicy: "Privacy Policy",
+        termsOfUse: "Terms of Use",
+        backHome: "Home",
+        viewPrivacy: "Privacy Policy",
+        viewTerms: "Terms of Use",
+      },
     },
   };
 
@@ -262,6 +276,14 @@ window.NabdI18n = (function () {
   }
 
   function getStoredLang() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var urlLang = params.get("lang");
+      if (urlLang && translations[urlLang]) return urlLang;
+    } catch (error) {
+      /* ignore */
+    }
+
     try {
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored && translations[stored]) return stored;
@@ -282,7 +304,9 @@ window.NabdI18n = (function () {
     document.documentElement.lang = resolved;
     document.documentElement.dir = resolved === "ar" ? "rtl" : "ltr";
 
-    document.title = strings.meta.title;
+    if (!document.body.classList.contains("legal-page-body")) {
+      document.title = strings.meta.title;
+    }
 
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute("content", strings.meta.description);
