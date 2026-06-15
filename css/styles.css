@@ -794,12 +794,7 @@ html[lang="ar"] .hero__title {
 }
 
 .process-timeline {
-  position: relative;
   overflow-x: clip;
-}
-
-.process-timeline__track {
-  display: none;
 }
 
 .process-steps {
@@ -880,35 +875,6 @@ html[lang="ar"] .hero__title {
   color: var(--color-text-dark-muted);
   font-size: 0.9375rem;
   line-height: 1.7;
-}
-
-@media (min-width: 64rem) {
-  .process-timeline__track {
-    display: block;
-    position: absolute;
-    top: 3.35rem;
-    inset-inline: 12%;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .process-timeline__line {
-    display: block;
-    height: 2px;
-    border-radius: 999px;
-    background: linear-gradient(
-      90deg,
-      rgba(200, 55, 45, 0.08),
-      rgba(200, 55, 45, 0.45) 20%,
-      rgba(200, 55, 45, 0.45) 80%,
-      rgba(200, 55, 45, 0.08)
-    );
-  }
-
-  .process-steps {
-    position: relative;
-    z-index: 1;
-  }
 }
 
 /* Privacy */
